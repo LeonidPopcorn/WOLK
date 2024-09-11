@@ -5,10 +5,8 @@ body {
 .greeting{
     font-family: 'Century Gothic';
     text-align: center;
-    font-size: 100px !important;
 }
 
 .first_paragraph{
     font-family: 'Century Gothic';
-    font-size: 40px !important;
 }
