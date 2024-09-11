@@ -1,12 +1,14 @@
 body {
-    background-color: bisque;
+    background-color: var(--tg-theme-bg-color);
 }
 
 .greeting{
     font-family: 'Arial';
     text-align: center;
+    color: var(--tg-theme-text-color);
 }
 
 .first_paragraph{
     font-family: 'Arial';
+    color: var(--tg-theme-text-color);
 }
