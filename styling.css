@@ -49,6 +49,8 @@ body {
 }
 
 .input {
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
     width: 95%;
     padding-top: 5px;
     padding-left: 4px;
@@ -58,5 +60,6 @@ body {
 }
 
 .entering-label {
+    color: var(--tg-theme-text-color);
     font-family: 'Arial';
 }
