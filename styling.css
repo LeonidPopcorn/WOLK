@@ -5,13 +5,45 @@ body {
 	align-items: center;
 }
 
-.greeting{
+.greeting {
     font-family: 'Arial';
+    font-size: 40px;
     text-align: center;
     color: var(--tg-theme-text-color);
+    margin-bottom: 5px;
 }
 
-.first_paragraph{
+.greetingWOLK {
     font-family: 'Arial';
+    text-align: center;
+    font-size: 25px;
     color: var(--tg-theme-text-color);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.button {
+    font-family: 'Arial';
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.button:hover {
+    font-family: 'Arial';
+    background-color: #04aa6db9; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
