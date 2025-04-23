@@ -2,11 +2,6 @@
 
 {% block content %}
 <div class="container">
-  <!-- Шапка с временем и кнопкой отмены -->
-  <header class="header">
-    <div class="time">9:41</div>
-    <button class="cancel-btn">Cancel</button>
-  </header>
 
   <!-- Бренд/логотип -->
   <div class="brand">
@@ -14,10 +9,15 @@
     <span class="bot-label">bot</span>
   </div>
 
+  <!-- Заголовок Ленты -->
+  <div class="feed-header">
+    <h1>Лента</h1>
+    <li><a href="#" class="menu-item"><input type="checkbox" id="search"> <label for="search">Поиск</label></a></li>
+  </div>
+
   <!-- Меню ленты -->
   <nav class="feed-menu">
     <ul>
-      <li><a href="#" class="menu-item"><input type="checkbox" id="search"> <label for="search">Поиск</label></a></li>
       <li><a href="#" class="menu-item active"><input type="checkbox" id="all" checked> <label for="all">Все</label></a></li>
       <li><a href="#" class="menu-item"><input type="checkbox" id="orders"> <label for="orders">Заказы</label></a></li>
       <li><a href="#" class="menu-item"><input type="checkbox" id="performers"> <label for="performers">Исполнители</label></a></li>
