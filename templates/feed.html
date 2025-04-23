@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <!-- Шапка с временем и кнопкой отмены -->
+  <header class="header">
+    <div class="time">9:41</div>
+    <button class="cancel-btn">Cancel</button>
+  </header>
+
+  <!-- Бренд/логотип -->
+  <div class="brand">
+    <h1>WOLK</h1>
+    <span class="bot-label">bot</span>
+  </div>
+
+  <!-- Меню ленты -->
+  <nav class="feed-menu">
+    <ul>
+      <li><a href="#" class="menu-item"><input type="checkbox" id="search"> <label for="search">Поиск</label></a></li>
+      <li><a href="#" class="menu-item active"><input type="checkbox" id="all" checked> <label for="all">Все</label></a></li>
+      <li><a href="#" class="menu-item"><input type="checkbox" id="orders"> <label for="orders">Заказы</label></a></li>
+      <li><a href="#" class="menu-item"><input type="checkbox" id="performers"> <label for="performers">Исполнители</label></a></li>
+    </ul>
+  </nav>
+
+  <!-- Рекомендованные заказы -->
+  <section class="recommended">
+    <h2>РЕКОМЕНДОВАННЫЕ</h2>
+    
+    <div class="job-card">
+      <div class="job-category">КОПИРАЙТИНГ</div>
+      <h3 class="job-title">Написать текст</h3>
+      <p class="job-description">Нужно написать статью и поправить текст, в документе...</p>
+      <div class="job-meta">
+        <span class="price">$50</span>
+        <span class="time-ago">2 часа назад</span>
+      </div>
+    </div>
+    
+    <!-- Здесь будут другие рекомендованные заказы -->
+  </section>
+
+  <!-- Нижнее меню -->
+  <nav class="bottom-nav">
+    <a href="#" class="nav-item active"><i class="icon-feed"></i> Лента</a>
+    <a href="#" class="nav-item"><i class="icon-messages"></i> Сообщения</a>
+    <a href="#" class="nav-item"><i class="icon-profile"></i> Профиль</a>
+  </nav>
+</div>
+{% endblock %}

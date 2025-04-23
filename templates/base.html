@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>Шапка сайта</header>
+    <main>{% block content %}{% endblock %}</main>
+    <footer>Подвал сайта</footer>
+</body>
+</html>
