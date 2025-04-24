@@ -11,14 +11,26 @@
 
   <!-- Заголовок Ленты -->
   <div class="feed-header">
-    <h1>Лента</h1>
-    <li><a href="#" class="menu-item"><input type="checkbox" id="search"> <label for="search">Поиск</label></a></li>
+    <h1 class="feed-title">Лента</h1>
+    <div class="feed-actions">
+      <button data-show-icon="true" data-show-search="true" data-type="Basic" class="search-btn">
+        <div class="search_01">
+          <img src="{{ url_for('static', filename='images/magnify.svg') }}">
+        </div>
+        <div class="search"><span class="search_span">Поиск</span></div>
+      </button>
+      <button class="filter-btn">
+        <div class="filter_01">
+          <img src="{{ url_for('static', filename='images/tune-variant.svg') }}">
+        </div>
+      </button>
+    </div>
   </div>
 
   <!-- Меню ленты -->
   <nav class="feed-menu">
     <ul>
-      <li><a href="#" class="menu-item active"><input type="checkbox" id="all" checked> <label for="all">Все</label></a></li>
+      <li><a href="#" class="menu-item"><input type="checkbox" id="all" checked> <label for="all">Все</label></a></li>
       <li><a href="#" class="menu-item"><input type="checkbox" id="orders"> <label for="orders">Заказы</label></a></li>
       <li><a href="#" class="menu-item"><input type="checkbox" id="performers"> <label for="performers">Исполнители</label></a></li>
     </ul>
